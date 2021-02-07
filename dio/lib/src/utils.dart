@@ -37,8 +37,8 @@ String encodeMap(data, DioEncodeHandler handler,
     CollectionFormat collectionFormat = CollectionFormat.csv}) {
   var urlData = StringBuffer('');
   var first = true;
-  var leftBracket = encode ? '%5B' : '[';
-  var rightBracket = encode ? '%5D' : ']';
+  var leftBracket =  '[';
+  var rightBracket = ']';
   var separatorChar = getSeparatorChar(collectionFormat);
   var encodeComponent = encode ? Uri.encodeQueryComponent : (e) => e;
   void urlEncode(dynamic sub, String path) {
